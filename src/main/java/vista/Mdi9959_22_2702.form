@@ -56,12 +56,12 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuCatalogosMantenimientoActionPerformed"/>
               </Events>
               <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="ManMoneda">
+                <MenuItem class="javax.swing.JMenuItem" name="ManPeliculas">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Mantenimiento TipoDeMoneda"/>
+                    <Property name="label" type="java.lang.String" value="Mantenimiento Peliculas"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManMonedaActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManPeliculasActionPerformed"/>
                   </Events>
                 </MenuItem>
               </SubComponents>

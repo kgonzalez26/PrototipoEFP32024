@@ -27,3 +27,13 @@ CREATE TABLE IF NOT EXISTS bitacora (
     FOREIGN KEY (aplid) references aplicacion (aplid),
     FOREIGN KEY (usuid) references usuario (id_usuario)
 ) ENGINE = InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS peliculas (
+    idPeliculas INT,
+    nombre VARCHAR(45),
+    clasificacion VARCHAR(45),
+    genero VARCHAR(45),
+    subtitulado VARCHAR(45),
+    idioma VARCHAR(45),
+    precio DOUBLE
+) ENGINE = InnoDB DEFAULT CHARSET=latin1;

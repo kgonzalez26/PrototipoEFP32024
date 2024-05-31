@@ -43,7 +43,7 @@ public class Mdi9959_22_2702 extends javax.swing.JFrame {
         mnuArchivoCerrarSesion = new javax.swing.JMenuItem();
         mnuCatalogos = new javax.swing.JMenu();
         mnuCatalogosMantenimiento = new javax.swing.JMenu();
-        ManMoneda = new javax.swing.JMenuItem();
+        ManPeliculas = new javax.swing.JMenuItem();
         mnuProcesos = new javax.swing.JMenu();
         mnuInformes = new javax.swing.JMenu();
         mnuHerramientas = new javax.swing.JMenu();
@@ -94,13 +94,13 @@ public class Mdi9959_22_2702 extends javax.swing.JFrame {
             }
         });
 
-        ManMoneda.setText("Mantenimiento TipoDeMoneda");
-        ManMoneda.addActionListener(new java.awt.event.ActionListener() {
+        ManPeliculas.setLabel("Mantenimiento Peliculas");
+        ManPeliculas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ManMonedaActionPerformed(evt);
+                ManPeliculasActionPerformed(evt);
             }
         });
-        mnuCatalogosMantenimiento.add(ManMoneda);
+        mnuCatalogosMantenimiento.add(ManPeliculas);
 
         mnuCatalogos.add(mnuCatalogosMantenimiento);
 
@@ -171,14 +171,14 @@ public class Mdi9959_22_2702 extends javax.swing.JFrame {
         ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);*/
     }//GEN-LAST:event_mnuSeguridadBitacoraActionPerformed
 
-    private void ManMonedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManMonedaActionPerformed
+    private void ManPeliculasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManPeliculasActionPerformed
         // TODO add your handling code here:
-        /*MantenimientoTiposDeMoneda ventana = new MantenimientoTiposDeMoneda();
+        MantenimientoPeliculas ventana = new MantenimientoPeliculas();
         jDesktopPane1.add(ventana);
         Dimension desktopSize = jDesktopPane1.getSize();
         Dimension FrameSize = ventana.getSize();
-        ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);*/
-    }//GEN-LAST:event_ManMonedaActionPerformed
+        ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
+    }//GEN-LAST:event_ManPeliculasActionPerformed
 
     private void mnuProcesosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuProcesosActionPerformed
         // TODO add your handling code here:
@@ -227,7 +227,7 @@ public class Mdi9959_22_2702 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem ManMoneda;
+    private javax.swing.JMenuItem ManPeliculas;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
