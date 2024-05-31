@@ -75,36 +75,33 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuProcesosActionPerformed"/>
           </Events>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="ProcesoTesoreria">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="ProcesoTesoreria"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProcesoTesoreriaActionPerformed"/>
-              </Events>
-            </MenuItem>
-          </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="mnuReportes">
+        <Menu class="javax.swing.JMenu" name="mnuInformes">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Reportes"/>
+            <Property name="text" type="java.lang.String" value="Informes"/>
           </Properties>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="mnuSeguridad">
+        <Menu class="javax.swing.JMenu" name="mnuHerramientas">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Seguridad"/>
+            <Property name="text" type="java.lang.String" value="Herramientas"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="mnuSeguridadBitacora">
+            <Menu class="javax.swing.JMenu" name="mnuSeguridad">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Consulta Bitacora"/>
-                <Property name="name" type="java.lang.String" value="mnuSeguridadBitacora" noResource="true"/>
+                <Property name="text" type="java.lang.String" value="Seguridad"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuSeguridadBitacoraActionPerformed"/>
-              </Events>
-            </MenuItem>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="mnuSeguridadBitacora">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Consulta Bitacora"/>
+                    <Property name="name" type="java.lang.String" value="mnuSeguridadBitacora" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuSeguridadBitacoraActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="mnuAyudas">

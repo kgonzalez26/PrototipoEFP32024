@@ -11,15 +11,15 @@ import java.awt.Dimension;
  *
  * @author visitante
  */
-public class MdiGeneral extends javax.swing.JFrame {
+public class Mdi9959_22_2702 extends javax.swing.JFrame {
 
     /**
      * Creates new form MdiGeneral
      */
-    public MdiGeneral() {
+    public Mdi9959_22_2702() {
         initComponents();
         setLocationRelativeTo(null);
-        this.setExtendedState(MdiGeneral.MAXIMIZED_BOTH);
+        this.setExtendedState(Mdi9959_22_2702.MAXIMIZED_BOTH);
         this.setTitle("Ejemplo Capas");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
@@ -45,8 +45,8 @@ public class MdiGeneral extends javax.swing.JFrame {
         mnuCatalogosMantenimiento = new javax.swing.JMenu();
         ManMoneda = new javax.swing.JMenuItem();
         mnuProcesos = new javax.swing.JMenu();
-        ProcesoTesoreria = new javax.swing.JMenuItem();
-        mnuReportes = new javax.swing.JMenu();
+        mnuInformes = new javax.swing.JMenu();
+        mnuHerramientas = new javax.swing.JMenu();
         mnuSeguridad = new javax.swing.JMenu();
         mnuSeguridadBitacora = new javax.swing.JMenuItem();
         mnuAyudas = new javax.swing.JMenu();
@@ -112,19 +112,12 @@ public class MdiGeneral extends javax.swing.JFrame {
                 mnuProcesosActionPerformed(evt);
             }
         });
-
-        ProcesoTesoreria.setText("ProcesoTesoreria");
-        ProcesoTesoreria.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ProcesoTesoreriaActionPerformed(evt);
-            }
-        });
-        mnuProcesos.add(ProcesoTesoreria);
-
         jMenuBar1.add(mnuProcesos);
 
-        mnuReportes.setText("Reportes");
-        jMenuBar1.add(mnuReportes);
+        mnuInformes.setText("Informes");
+        jMenuBar1.add(mnuInformes);
+
+        mnuHerramientas.setText("Herramientas");
 
         mnuSeguridad.setText("Seguridad");
 
@@ -137,7 +130,9 @@ public class MdiGeneral extends javax.swing.JFrame {
         });
         mnuSeguridad.add(mnuSeguridadBitacora);
 
-        jMenuBar1.add(mnuSeguridad);
+        mnuHerramientas.add(mnuSeguridad);
+
+        jMenuBar1.add(mnuHerramientas);
 
         mnuAyudas.setText("Ayuda");
         jMenuBar1.add(mnuAyudas);
@@ -195,16 +190,6 @@ public class MdiGeneral extends javax.swing.JFrame {
         ventana.setVisible(true);*/
     }//GEN-LAST:event_mnuProcesosActionPerformed
 
-    private void ProcesoTesoreriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProcesoTesoreriaActionPerformed
-        // TODO add your handling code here:
-        /*ProcesoTesoreria ventana = new ProcesoTesoreria();
-        jDesktopPane1.add(ventana);
-        Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana.getSize();
-        ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
-        ventana.setVisible(true);*/
-    }//GEN-LAST:event_ProcesoTesoreriaActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -222,27 +207,27 @@ public class MdiGeneral extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MdiGeneral.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Mdi9959_22_2702.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MdiGeneral.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Mdi9959_22_2702.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MdiGeneral.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Mdi9959_22_2702.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MdiGeneral.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Mdi9959_22_2702.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MdiGeneral().setVisible(true);
+                new Mdi9959_22_2702().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem ManMoneda;
-    private javax.swing.JMenuItem ProcesoTesoreria;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
@@ -254,8 +239,9 @@ public class MdiGeneral extends javax.swing.JFrame {
     private javax.swing.JMenu mnuAyudas;
     private javax.swing.JMenu mnuCatalogos;
     private javax.swing.JMenu mnuCatalogosMantenimiento;
+    private javax.swing.JMenu mnuHerramientas;
+    private javax.swing.JMenu mnuInformes;
     private javax.swing.JMenu mnuProcesos;
-    private javax.swing.JMenu mnuReportes;
     private javax.swing.JMenu mnuSeguridad;
     private javax.swing.JMenuItem mnuSeguridadBitacora;
     // End of variables declaration//GEN-END:variables
