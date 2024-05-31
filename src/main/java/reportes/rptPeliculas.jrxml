@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5fd60942-adcd-4233-a22e-f9d70fac70c5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM peliculas]]>
+	</queryString>
+	<field name="idPeliculas" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="precio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="89" y="13" width="448" height="54" uuid="ab11bc09-ab20-43e4-a38d-3bd52a7f2817"/>
+				<textElement>
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[Reporte Peliculas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="11" width="100" height="20" uuid="5e3fab2b-e76d-460b-86ba-bb10f9fda200"/>
+				<text><![CDATA[ID pelicula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="11" width="100" height="20" uuid="b1a0a0e0-f86e-4b0e-a7ca-52cd3480c8b3"/>
+				<text><![CDATA[Nombre pelicula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="11" width="100" height="20" uuid="4aef257e-fc20-4cec-8345-02d9b1f83113"/>
+				<text><![CDATA[Precio pelicula]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="10" width="100" height="20" uuid="8020a40e-027f-418d-afe1-058733a0c450"/>
+				<textFieldExpression><![CDATA[$F{id_moneda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="10" width="100" height="20" uuid="9150002c-e3dd-43b7-9ca4-59d7807e4dcb"/>
+				<textFieldExpression><![CDATA[$F{nombre_moneda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="10" width="100" height="20" uuid="bbb4abfd-fdf0-4f1c-81d4-c9bba37665f3"/>
+				<textFieldExpression><![CDATA[$F{valor_moneda}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
